@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomobuddy</title>
     <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+</head>
+<body>
+    <h1>Pomobuddy</h1>
+    <h2>Time to be productive!</h2>
+    <div id="timer">00:00</div>
+    <button onclick="startCountdown()" id="start-timer">Start</button>
+    <button onclick="pauseCountdown()" id="stop-timer">Pause</button>
+    <!-- <button onclick="resetCountdown()" id="reset-timer">Reset</button> -->
+
+    <!-- <h1>Are you sure you want to pause?</h1>
+    <p>Doing this may disrupt your focus. Try to stick with the pomodoro intervals. However, if you need to stop, please confirm.</p>
+    <button id="confirm-pause">Yes, I need to pause</button>
+    <button id="cancel-pause">No, I want to keep going</button>
+
+    <h1>Are you sure you want to reset?</h1>
+    <p>Doing this will reset the timer. Please confirm this is okay.</p>
+    <button id="confirm-pause">Yes, I want to start over</button>
+    <button id="cancel-pause">No, I want to keep going</button> -->
+
+    <h3>Settings</h3>
+    <button id="toggle-settings">Toggle Settings</button>
+    <h4>Work Session Duration</h4>
+    <input type="number" id="pomodoro-duration" value="25" min="1"> minutes
+    <h4>Short Break Duration</h4>
+    <input type="number" id="short-break-duration" value="5" min="1"> minutes
+    <h4>Long Break Duration</h4>
+    <input type="number" id="long-break-duration" value="30" min="1"> minutes
+    <button id="save-settings">Save</button>
+    <button id="reset-settings">Reset</button>
+
+    <script src="scripts/app.js"></script>
+</body>
 </html>
